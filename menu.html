@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>UTB - Fried Chiken</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free Website Template" name="keywords">
+    <meta content="Free Website Template" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0 nav-bar">
+        <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
+            <a href="index.html" class="navbar-brand px-lg-4 m-0">
+   
+<img class="w-16" src="img/utb4.png" alt="Image" style="max-width: 200px;">
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav ml-auto p-4">
+                 <a href="index.html" class="nav-item nav-link">Inicio</a>
+                    <a href="about.html" class="nav-item nav-link">Acerca de</a>
+                    <a href="service.html" class="nav-item nav-link">Servicios</a>
+                    <a href="login.html" class="nav-item nav-link active">Constitución</a>
+                    <a href="UTB 2.0.html" class="nav-item nav-link">UTB 2.0</a>
+                    <div class="nav-item dropdown">
+                        
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Page Header Start -->
+ <div class="container-fluid page-header mb-5 position-relative overlay-bottom" 
+     style="background-image: url('img/balance.png'); background-size: cover; background-position: center; min-height: 800px;">
+    <div class="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style="min-height: 1000px">
+        <h1 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase"></h1>
+    </div>
+</div>
+
+    <!-- Page Header End -->
+
+
+<!-- 🔽 ESTE CÓDIGO SE PUEDE PONER AL FINAL DEL BODY SIN MODIFICAR EL RESTO -->
+<section style="padding: 20px; max-width: 900px; margin: auto;">
+    <div style="
+        background: #ffffff;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    ">
+        <h2 style="text-align: center;">📊 Balance General Inicial - Constitución de la Empresa</h2>
+
+        <table style="width: 100%; border-collapse: collapse;">
+            <tr><th colspan="2">ACTIVOS</th></tr>
+            <tr><td>Caja y Bancos</td><td>12,000 Bs</td></tr>
+            <tr><td>Insumos</td><td>4,000 Bs</td></tr>
+            <tr><td>Equipos y Utensilios</td><td>25,000 Bs</td></tr>
+            <tr><td>Alquiler Pagado</td><td>9,000 Bs</td></tr>
+            <tr><th>Total Activos</th><th>50,000 Bs</th></tr>
+        </table>
+
+        <table style="width: 100%; border-collapse: collapse; margin-top: 15px;">
+            <tr><th colspan="2">PASIVOS</th></tr>
+            <tr><td>Préstamo Bancario</td><td>10,000 Bs</td></tr>
+            <tr><th>Total Pasivos</th><th>10,000 Bs</th></tr>
+        </table>
+
+        <table style="width: 100%; border-collapse: collapse; margin-top: 15px;">
+            <tr><th colspan="2">PATRIMONIO</th></tr>
+            <tr><td>Aporte de Socios</td><td>50,000 Bs</td></tr>
+            <tr><td>Pérdidas / Utilidades Iniciales</td><td>0 Bs</td></tr>
+            <tr><th>Total Patrimonio</th><th>40,000 Bs</th></tr>
+        </table>
+
+        <h3 style="text-align: center; margin-top: 20px;">✔️ Comprobación</h3>
+        <p style="text-align: center;"><strong>ACTIVOS (50,000) = PASIVOS (10,000) + PATRIMONIO (40,000)</strong></p>
+    </div>
+</section>
+...
+
+<!-- 🔽 CALCULADORA DE COSTOS (SE PUEDE COLOCAR AL FINAL DEL BODY) -->
+<section style="padding: 20px; max-width: 900px; margin: auto;">
+    <div style="
+        background: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+        text-align: center;
+    ">
+        <h2>🔢 Calculadora de Costos y Estado de Resultados</h2>
+
+        <label><strong>Ingrese el precio unitario del pollo (Bs):</strong></label><br>
+        <input type="number" id="precioPollo" placeholder="Ej: 30" 
+               style="padding: 8px; margin-top: 10px; width: 200px; text-align: center;">
+
+        <button onclick="calcular()" 
+                style="padding: 8px 15px; margin-top: 10px; cursor: pointer; border: none; 
+                       background:#ffd700; border-radius: 5px; font-weight: bold;">
+            Calcular
+        </button>
+
+        <div class="resultado" id="resultados" style="margin-top: 20px;"></div>
+    </div>
+</section>
+
+<script>
+function calcular() {
+    let precio = parseFloat(document.getElementById("precioPollo").value);
+    if (isNaN(precio) || precio <= 0) {
+        alert("Ingrese un precio válido.");
+        return;
+    }
+
+    let costoIngredientes = precio * 0.40;  
+    let costoManoObra = precio * 0.20;      
+    let costoServicios = precio * 0.10;     
+    let costoTotal = costoIngredientes + costoManoObra + costoServicios;
+
+    let precioVenta = costoTotal * 1.40;
+    let ganancia = precioVenta - costoTotal;
+
+    document.getElementById("resultados").innerHTML = `
+        <table style="width:100%; border-collapse: collapse; margin-top: 15px;">
+            <tr><th>Concepto</th><th>Monto (Bs)</th></tr>
+            <tr><td>Costo de Ingredientes</td><td>${costoIngredientes.toFixed(2)}</td></tr>
+            <tr><td>Mano de Obra</td><td>${costoManoObra.toFixed(2)}</td></tr>
+            <tr><td>Servicios (Luz, Agua, Gas)</td><td>${costoServicios.toFixed(2)}</td></tr>
+            <tr><th>COSTO TOTAL UNITARIO</th><th>${costoTotal.toFixed(2)}</th></tr>
+            <tr><td>Precio de Venta Sugerido</td><td>${precioVenta.toFixed(2)}</td></tr>
+            <tr><th>GANANCIA POR UNIDAD</th><th>${ganancia.toFixed(2)}</th></tr>
+        </table>
+
+        <h3 style="margin-top:20px;">📈 Estado de Resultados Simplificado</h3>
+        <table style="width:100%; border-collapse: collapse;">
+            <tr><th>Ventas</th><td>${precioVenta.toFixed(2)}</td></tr>
+            <tr><th>Costos</th><td>${costoTotal.toFixed(2)}</td></tr>
+            <tr><th>UTILIDAD NETA</th><th>${ganancia.toFixed(2)}</th></tr>
+        </table>
+    `;
+}
+</script>
+
+
+<footer>...</footer>
+</section> <!-- EL BALANCE -->
+</body>
+</html>
+
+
+
+
+    
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
